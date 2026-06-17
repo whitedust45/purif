@@ -1,0 +1,26 @@
+edge_scoring:
+  filter_prob0_threshold: null
+  score_column: prob_1
+
+purification:
+  tau_h: 0.85
+  tau_l: 0.15
+  lambda_modularity: 0.30
+  lambda_locality: 2.00
+  epsilon: 0.001
+  max_iter: 30
+  max_community_size: 500
+  min_community_size: 3
+
+classifier:
+  hidden_dim: 64
+  proto_dim: 128
+  num_classes: 2
+  threshold: 0.70
+  tau_contrastive: 0.20
+  tau_prototype: 1.00
+  tau_mask: 0.50
+  retention_threshold: 0.50
+  alpha_contrastive: 0.03
+  beta_sparsity: 0.02
+  lambda_proto: 0.05
